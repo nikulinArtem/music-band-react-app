@@ -1,0 +1,65 @@
+.home-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 700px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+.image-inner {
+    display: flex;
+}
+.image-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+blockquote {
+    align-self: end;
+    text-align: end;
+    width: 500px;
+    padding: 5px 10px;
+}
+.runes-outline {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.runes-outline img {
+    width: 35px;
+    height: auto;
+}
+p {
+    text-align: center;
+    margin: 5px;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-top: 10px;
+}
+.about-info {
+    display: flex;
+    margin: 20px 0;
+}
+
+.album-btn {
+    margin: 20px 0;
+    height: 50px;
+    width: 200px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.style-info {
+    text-align: start;
+}

@@ -3,27 +3,26 @@ import {
     Route, NavLink
 } from "react-router-dom";
 import {Routes} from "react-router";
-import Home from './Home';
-import About from './About';
-import Dashboard from './Dashboard';
-
-
+import Home from './Components/Home';
+import Albums from './Components/Albums';
+import Dashboard from './Components/Dashboard';
+import Details from './Components/Details';
 import './App.css';
 
 
 class App extends React.Component {
   render() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <NavLink  to="/" >Home</NavLink>
+        <div className="header">
+            <ul className="nav">
+                <li className="nav-item">
+                    <NavLink  to="/"  className="link">Home</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/about">About</NavLink>
+                <li className="nav-item">
+                    <NavLink to="/albums"  className="link">Albums</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/dashboard">Dashboard</NavLink>
+                <li className="nav-item">
+                    <NavLink to="/dashboard"  className="link">Dashboard</NavLink>
                 </li>
             </ul>
 
@@ -31,12 +30,16 @@ class App extends React.Component {
             <Routes>
                 <Route  path="/" element={<Home  />} />
 
-                <Route path="/about" element={<About />}/>
+                <Route path="/albums" element={<Albums />} />
+                <Route path="/albums/:name" element={ <Details/> } />
 
                 <Route path="/dashboard" element={<Dashboard />}/>
 
+
             </Routes>
         </div>
+
+
     );
   }
 
