@@ -39,10 +39,10 @@ p {
     text-align: center;
     margin: 5px;
 }
-ul {
+.list {
     list-style: none;
 }
-li {
+.list-item {
     margin-top: 10px;
 }
 .about-info {
