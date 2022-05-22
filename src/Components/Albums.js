@@ -1,7 +1,6 @@
 import {useNavigate } from "react-router";
 import { useState } from "react";
 import db from '../storage/db.json';
-import AlbumList from "./AlbumList";
 
 function Albums() {
     let [state] = useState({albums: db});
