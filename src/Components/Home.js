@@ -48,7 +48,6 @@ function Home() {
                     <img src={algis} alt="/"/>
                     <img src={algis} alt="/"/>
                 </div>
-
             </div>
 
             <footer>

@@ -27,23 +27,18 @@ class App extends React.Component {
             </ul>
 
             <hr />
+
             <Routes>
                 <Route  path="/" element={<Home  />} />
-
                 <Route path="/albums" element={<Albums />} />
                 <Route path="/albums/:name" element={ <Details/> } />
-
                 <Route path="/dashboard" element={<Dashboard />}/>
-
-
             </Routes>
         </div>
 
 
     );
   }
-
-
 }
 
 export default App;

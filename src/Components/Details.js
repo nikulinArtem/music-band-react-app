@@ -6,12 +6,8 @@ import algis from "./premium-icon-algiz-4989001.png";
 
 function Details() {
     let { name } = useParams();
-    let all = {albums: db};
-    let current = all.albums.filter((item, index) => all.albums[index].short === name);
+    let current = db.filter((item, index) => db[index].short === name);
     let [state] = useState(current[0]);
-
-    console.log(state.tracks);
-
 
     return  (
         <div className="container">
